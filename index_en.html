@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumelys - Service & Product Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to <span class="highlight">Lumelys</span></h1>
+        <p>We facilitate the promotion of tourism experiences and sports services.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="training_en.html">🏋️‍♂️ Sports Training</a></li>
+            <li><a href="teachers_en.html">🎓 Teachers & Classes</a></li>
+            <li><a href="rentals_en.html">🏠 Rental Houses</a></li>
+            <li><a href="options_en.html">🌍 Other Options</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
+        <h2>💰 Why choose Lumelys?</h2>
+        <p>🚀 We accept cryptocurrency payments for greater flexibility and accessibility.</p>
+        <p>🔗 We are developing an **exclusive token** with rewards for customers and providers.</p>
+    </section>
+
+    <select id="language-selector" onchange="changeLanguage()">
+        <option value="en">🇺🇸 English</option>
+        <option value="es">🇪🇸 Español</option>
+    </select>
+
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language-selector").value;
+            if (lang === "es") {
+                window.location.href = "index.html";
+            } else {
+                window.location.href = "index_en.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
