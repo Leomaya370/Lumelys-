@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumelys - Plataforma de Servicios y Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a <span class="resaltado">Lumelys</span></h1>
+        <p>Facilitamos la promocion de experiencias turisticas y servicios deportivos.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="entrenamiento_es.html">🏋️‍♂️ Entrenamiento Deportivo</a></li>
+            <li><a href="profesores_es.html">🎓 Profesores & Clases</a></li>
+            <li><a href="rentas_es.html">🏠 Casas de Renta</a></li>
+            <li><a href="opciones_es.html">🌍 Otras Opciones</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduccion">
+        <h2>💰 ¿Por qué elegir Lumelys?</h2>
+        <p>🚀 Aceptamos pagos en criptomonedas para mayor flexibilidad y accesibilidad.</p>
+        <p>🔗 Estamos desarrollando un **token exclusivo** con recompensas para clientes y proveedores.</p>
+    </section>
+
+    <select id="language-selector" onchange="changeLanguage()">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇺🇸 English</option>
+    </select>
+
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language-selector").value;
+            if (lang === "es") {
+                window.location.href = "index.html";
+            } else {
+                window.location.href = "index_en.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
